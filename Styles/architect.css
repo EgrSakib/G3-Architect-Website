@@ -71,26 +71,66 @@ nav li a {
     font-size: 1rem;
     font-weight: 400;
 }
-.banner img{
+
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
+
 /* Responsive Style */
 /* Small Device */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
+
     nav {
         flex-direction: column;
     }
 }
+
 /* Medium Device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    header{
+    header {
         padding: 50px;
     }
+
     nav {
         flex-direction: column;
     }
+}
+
+/* Main Section */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.team-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.content-title {
+    font-size: 2.8rem;
+}
+
+.content-title .gray {
+    color: #727272;
+    font-weight: 500;
+}
+.content-title .orange{
+    color: #FF900E;
+    font-weight: 700;
 }
