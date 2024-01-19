@@ -140,6 +140,25 @@ main {
     font-size: 1.25rem;
     margin-top: 5px;
 }
+
+/* Sponsors Section */
+.sponsors{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.img-container img{
+    width: 165px;
+}
+
 /* Responsive Style */
 /* Small Device */
 
@@ -148,7 +167,7 @@ main {
         padding: 20px;
     }
 
-    nav {
+    nav, .img-container {
         flex-direction: column;
     }
 
@@ -168,10 +187,15 @@ main {
     .btn-primary {
         margin-bottom: 10px;
     }
-    .facts-card-container{
+    /* .facts-card-container{
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 5px;
+    } */
+    .facts-card-container{
+        flex-direction: column;
+        padding: 10px 30px;
+        gap: 1.5rem;
     }
 }
 
@@ -181,7 +205,7 @@ main {
         padding: 50px;
     }
 
-    nav {
+    nav, .img-container {
         flex-direction: column;
     }
 
@@ -191,5 +215,8 @@ main {
 
     .btn-primary {
         margin-bottom: 10px;
+    }
+    .facts-card-container{
+        gap: 1.5rem;
     }
 }
